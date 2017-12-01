@@ -1,3 +1,5 @@
+.bundle/
+--system/
 build/
 DerivedData/
 
