@@ -10,11 +10,16 @@
 		3737D92B69D5EE052C751E35 /* Pods_TesteConcrete_MVCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378B763BFBDC23F02D142903 /* Pods_TesteConcrete_MVCTests.framework */; };
 		41AD85E5B016528EC970890F /* Pods_TesteConcrete_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51993075D96992AEF7BF390 /* Pods_TesteConcrete_MVC.framework */; };
 		EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */; };
-		EB955BCE1FD1C4A4009B4CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BCD1FD1C4A4009B4CCD /* ViewController.swift */; };
-		EB955BD11FD1C4A4009B4CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955BCF1FD1C4A4009B4CCD /* Main.storyboard */; };
 		EB955BD31FD1C4A4009B4CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */; };
 		EB955BD61FD1C4A4009B4CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */; };
 		EB955BE11FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BE01FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift */; };
+		EB955BEE1FD1CCCE009B4CCD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BED1FD1CCCE009B4CCD /* NetworkRequest.swift */; };
+		EB9B61171FD1CD620093BAA6 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B61161FD1CD620093BAA6 /* Json.swift */; };
+		EB9B61191FD1CD7D0093BAA6 /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B61181FD1CD7D0093BAA6 /* GithubRequest.swift */; };
+		EB9B611C1FD1CFEF0093BAA6 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */; };
+		EB9B611E1FD1D0480093BAA6 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B611D1FD1D0480093BAA6 /* ViewCode.swift */; };
+		EB9B61201FD1D4EA0093BAA6 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B611F1FD1D4EA0093BAA6 /* TableViewExtensions.swift */; };
+		EB9B61221FD1D5C70093BAA6 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +41,19 @@
 		A51993075D96992AEF7BF390 /* Pods_TesteConcrete_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteConcrete_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BC81FD1C4A4009B4CCD /* TesteConcrete-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TesteConcrete-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB955BCD1FD1C4A4009B4CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB955BD01FD1C4A4009B4CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB955BD51FD1C4A4009B4CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB955BD71FD1C4A4009B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB955BDC1FD1C4A5009B4CCD /* TesteConcrete-MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TesteConcrete-MVCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BE01FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteConcrete_MVCTests.swift; sourceTree = "<group>"; };
 		EB955BE21FD1C4A5009B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB955BED1FD1CCCE009B4CCD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EB9B61161FD1CD620093BAA6 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		EB9B61181FD1CD7D0093BAA6 /* GithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
+		EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
+		EB9B611D1FD1D0480093BAA6 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		EB9B611F1FD1D4EA0093BAA6 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +119,15 @@
 		EB955BCA1FD1C4A4009B4CCD /* TesteConcrete-MVC */ = {
 			isa = PBXGroup;
 			children = (
+				EB9B611A1FD1CF0E0093BAA6 /* API */,
 				EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */,
-				EB955BCD1FD1C4A4009B4CCD /* ViewController.swift */,
-				EB955BCF1FD1C4A4009B4CCD /* Main.storyboard */,
 				EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */,
 				EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */,
 				EB955BD71FD1C4A4009B4CCD /* Info.plist */,
+				EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */,
+				EB9B611D1FD1D0480093BAA6 /* ViewCode.swift */,
+				EB9B611F1FD1D4EA0093BAA6 /* TableViewExtensions.swift */,
+				EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */,
 			);
 			path = "TesteConcrete-MVC";
 			sourceTree = "<group>";
@@ -126,6 +139,16 @@
 				EB955BE21FD1C4A5009B4CCD /* Info.plist */,
 			);
 			path = "TesteConcrete-MVCTests";
+			sourceTree = "<group>";
+		};
+		EB9B611A1FD1CF0E0093BAA6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB955BED1FD1CCCE009B4CCD /* NetworkRequest.swift */,
+				EB9B61161FD1CD620093BAA6 /* Json.swift */,
+				EB9B61181FD1CD7D0093BAA6 /* GithubRequest.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +242,6 @@
 			files = (
 				EB955BD61FD1C4A4009B4CCD /* LaunchScreen.storyboard in Resources */,
 				EB955BD31FD1C4A4009B4CCD /* Assets.xcassets in Resources */,
-				EB955BD11FD1C4A4009B4CCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,11 +264,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TesteConcrete-MVC/Pods-TesteConcrete-MVC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -348,8 +372,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB955BCE1FD1C4A4009B4CCD /* ViewController.swift in Sources */,
+				EB955BEE1FD1CCCE009B4CCD /* NetworkRequest.swift in Sources */,
 				EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */,
+				EB9B611C1FD1CFEF0093BAA6 /* ReposViewController.swift in Sources */,
+				EB9B61171FD1CD620093BAA6 /* Json.swift in Sources */,
+				EB9B61201FD1D4EA0093BAA6 /* TableViewExtensions.swift in Sources */,
+				EB9B61191FD1CD7D0093BAA6 /* GithubRequest.swift in Sources */,
+				EB9B611E1FD1D0480093BAA6 /* ViewCode.swift in Sources */,
+				EB9B61221FD1D5C70093BAA6 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +402,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB955BCF1FD1C4A4009B4CCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB955BD01FD1C4A4009B4CCD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -506,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
 				INFOPLIST_FILE = "TesteConcrete-MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concrete.TesteConcrete-MVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
 				INFOPLIST_FILE = "TesteConcrete-MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concrete.TesteConcrete-MVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
