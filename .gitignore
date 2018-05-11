@@ -31,3 +31,8 @@ playground.xcworkspace
 
 # CocoaPods
 Pods/
+
+# Carthage
+Carthage/
+
+xcshareddata/
