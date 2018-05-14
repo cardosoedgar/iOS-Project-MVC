@@ -11,7 +11,6 @@ import Cartography
 import Kingfisher
 
 class RepoCell: UITableViewCell, ViewCode, ReusableCell {
-    
     let userView = UIView()
     let userImage = UIImageView()
 
@@ -70,12 +69,12 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
         label.font = UIFont.systemFont(ofSize: 14)
         return label
     }()
-    
+
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
-    
+
     func setup(with repo: Repo) {
         let imageUrl = URL(string: repo.image)
         userImage.kf.setImage(with: imageUrl)
@@ -86,7 +85,7 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
         forksNumber.text = "\(repo.forks)"
         starsNumber.text = "\(repo.stars)"
     }
-    
+
     func buildViewHierarchy() {
         userView.addSubview(userImage)
         userView.addSubview(userName)
@@ -99,14 +98,14 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
         addSubview(starImage)
         addSubview(starsNumber)
     }
-    
+
     func configureViews() {
         repoName.setContentHuggingPriority(.required, for: .vertical)
         userName.setContentHuggingPriority(.required, for: .vertical)
         forksNumber.setContentHuggingPriority(.required, for: .horizontal)
         starsNumber.setContentHuggingPriority(.required, for: .horizontal)
     }
-    
+
     func setupConstraints() {
         constrain(userView, userImage, userName, userType) { userView, userImage, userName, userType in
             userImage.centerX == userView.centerX
@@ -132,11 +131,11 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
             userView.trailing == containerView.trailing + 8
             userView.centerY == containerView.centerY
             userView.width == 130
-            
+
             repoName.top == containerView.top + 8
             repoName.leading == containerView.leading + 8
             repoName.trailing == userView.leading + 2
-            
+
             repoDescription.top == repoName.bottom
             repoDescription.leading == repoName.leading
             repoDescription.trailing == userView.leading + 2
@@ -159,7 +158,7 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
             starsNumber.leading == starImage.trailing + 3
         }
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

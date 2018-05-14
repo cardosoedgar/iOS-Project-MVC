@@ -16,7 +16,7 @@ class Repo {
     let description: String
     let forks: Int
     let stars: Int
-    
+
     init?(jsonObject: JsonObject) {
         guard let name = jsonObject["name"] as? String,
             let description = jsonObject["description"] as? String,
@@ -28,7 +28,7 @@ class Repo {
             let stars = jsonObject["stargazers_count"] as? Int else {
                 return nil
         }
-        
+
         self.name = name
         self.description = description
         self.owner = ownerName

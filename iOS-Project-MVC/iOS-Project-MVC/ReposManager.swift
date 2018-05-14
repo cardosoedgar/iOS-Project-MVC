@@ -11,7 +11,7 @@ import Foundation
 class ReposManager {
     private let request = GithubRequest()
     private var repos = [Repo]()
-    
+
     func getRepos(page: Int, completion: @escaping (Bool) -> Void) {
         request.getRepos(page: page) { result in
             if let result = result {
@@ -21,15 +21,15 @@ class ReposManager {
                     completion(true)
                 }
             }
-            
+
             return completion(false)
         }
     }
-    
+
     func getRepoCount() -> Int {
         return repos.count
     }
-    
+
     func getRepo(at index: Int) -> Repo? {
         if index < repos.count {
             return repos[index]

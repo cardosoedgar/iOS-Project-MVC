@@ -10,10 +10,10 @@ import Foundation
 
 class GithubRequest {
     var networkRequest: NetworkRequestProtocol = NetworkRequest()
-    
+
     func getRepos(page: Int, completion: @escaping (JsonObject?) -> Void) {
         let url = URL(string: "https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=\(page)")!
-        
+
         networkRequest.request(url, method: .get, parameters: nil, headers: nil) { result in
             switch result {
             case .success(.object (let response)):
@@ -23,10 +23,10 @@ class GithubRequest {
             }
         }
     }
-    
+
     func getPullRequests(repo: String, user: String, completion: @escaping ([JsonObject]?) -> Void) {
         let url = URL(string: "https://api.github.com/repos/\(user)/\(repo)/pulls")!
-        
+
         networkRequest.request(url, method: .get, parameters: nil, headers: nil) { result in
             switch result {
             case .success(.array (let response)):

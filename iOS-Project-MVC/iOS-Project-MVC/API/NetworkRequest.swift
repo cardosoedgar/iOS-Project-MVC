@@ -24,16 +24,16 @@ protocol NetworkRequestProtocol {
 }
 
 class NetworkRequest: NetworkRequestProtocol {
-    
     let manager: SessionManager = {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         configuration.timeoutIntervalForRequest = 10
         return SessionManager(configuration: configuration)
     }()
-    
-    func request(_ url: URL, method: HTTPMethod, parameters: [String : Any]?, headers: [String : String]?, completion: @escaping (Result<Json>) -> Void) -> Void {
-        
+
+    func request(_ url: URL, method: HTTPMethod, parameters: [String: Any]?, headers: [String: String]?,
+                 completion: @escaping (Result<Json>) -> Void) -> Void {
+
         manager.request(url,
                         method: method,
                         parameters: parameters,
@@ -47,4 +47,3 @@ class NetworkRequest: NetworkRequestProtocol {
                         })
     }
 }
-

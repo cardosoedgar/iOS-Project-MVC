@@ -27,10 +27,9 @@ public extension UITableView {
             }
             return cell
     }
-    
+
     final func register<T: UITableViewCell>(cellType: T.Type)
         where T: ReusableCell {
             self.register(cellType.self, forCellReuseIdentifier: cellType.reuseIdentifier)
     }
 }
-
