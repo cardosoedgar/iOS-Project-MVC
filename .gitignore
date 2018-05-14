@@ -36,3 +36,4 @@ Pods/
 Carthage/
 
 xcshareddata/
+.DS_Store

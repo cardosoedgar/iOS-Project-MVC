@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BD9FF3920A6253C0077D5AA /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3720A6253C0077D5AA /* Kingfisher.framework */; };
-		6BD9FF3A20A625A20077D5AA /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3620A6253C0077D5AA /* Cartography.framework */; };
-		6BD9FF3B20A625A20077D5AA /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3620A6253C0077D5AA /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6BD9FF3D20A625A20077D5AA /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3720A6253C0077D5AA /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6BD9FF3E20A625A20077D5AA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3420A625330077D5AA /* Alamofire.framework */; };
-		6BD9FF3F20A625A20077D5AA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9FF3420A625330077D5AA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B8AB81320AA0A4D00FC6F3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */; };
+		6B8AB81420AA0A4D00FC6F3E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B8AB81520AA0A4D00FC6F3E /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */; };
+		6B8AB81620AA0A4D00FC6F3E /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B8AB81720AA0A4D00FC6F3E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */; };
+		6B8AB81820AA0A4D00FC6F3E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B8AB81A20AA0D6000FC6F3E /* ReposManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */; };
+		6BF2BDE720AA0F450003F20C /* RepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE620AA0F450003F20C /* RepoResponse.swift */; };
+		6BF2BDE920AA0F6C0003F20C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE820AA0F6C0003F20C /* Repo.swift */; };
 		EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */; };
 		EB955BD31FD1C4A4009B4CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */; };
 		EB955BD61FD1C4A4009B4CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */; };
@@ -43,9 +46,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6BD9FF3D20A625A20077D5AA /* Kingfisher.framework in Embed Frameworks */,
-				6BD9FF3F20A625A20077D5AA /* Alamofire.framework in Embed Frameworks */,
-				6BD9FF3B20A625A20077D5AA /* Cartography.framework in Embed Frameworks */,
+				6B8AB81420AA0A4D00FC6F3E /* Alamofire.framework in Embed Frameworks */,
+				6B8AB81820AA0A4D00FC6F3E /* Kingfisher.framework in Embed Frameworks */,
+				6B8AB81620AA0A4D00FC6F3E /* Cartography.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,9 +56,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6BD9FF3420A625330077D5AA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		6BD9FF3620A6253C0077D5AA /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = SOURCE_ROOT; };
-		6BD9FF3720A6253C0077D5AA /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = SOURCE_ROOT; };
+		6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposManager.swift; sourceTree = "<group>"; };
+		6BF2BDE620AA0F450003F20C /* RepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
+		6BF2BDE820AA0F6C0003F20C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		EB955BC81FD1C4A4009B4CCD /* iOS-Project-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,9 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD9FF3E20A625A20077D5AA /* Alamofire.framework in Frameworks */,
-				6BD9FF3A20A625A20077D5AA /* Cartography.framework in Frameworks */,
-				6BD9FF3920A6253C0077D5AA /* Kingfisher.framework in Frameworks */,
+				6B8AB81320AA0A4D00FC6F3E /* Alamofire.framework in Frameworks */,
+				6B8AB81720AA0A4D00FC6F3E /* Kingfisher.framework in Frameworks */,
+				6B8AB81520AA0A4D00FC6F3E /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B8AB80C20AA0A1600FC6F3E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */,
+				EB9B611D1FD1D0480093BAA6 /* ViewCode.swift */,
+				EB9B611F1FD1D4EA0093BAA6 /* TableViewExtensions.swift */,
+				6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */,
+				6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */,
+				6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */,
+				EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */,
+				EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */,
+				EB955BD71FD1C4A4009B4CCD /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
 		EB955BBF1FD1C4A4009B4CCD = {
 			isa = PBXGroup;
 			children = (
@@ -115,18 +137,13 @@
 		EB955BCA1FD1C4A4009B4CCD /* iOS-Project-MVC */ = {
 			isa = PBXGroup;
 			children = (
-				6BD9FF3620A6253C0077D5AA /* Cartography.framework */,
-				6BD9FF3720A6253C0077D5AA /* Kingfisher.framework */,
-				6BD9FF3420A625330077D5AA /* Alamofire.framework */,
 				EB9B611A1FD1CF0E0093BAA6 /* API */,
-				EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */,
-				EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */,
-				EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */,
-				EB955BD71FD1C4A4009B4CCD /* Info.plist */,
 				EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */,
-				EB9B611D1FD1D0480093BAA6 /* ViewCode.swift */,
-				EB9B611F1FD1D4EA0093BAA6 /* TableViewExtensions.swift */,
 				EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */,
+				6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */,
+				6B8AB80C20AA0A1600FC6F3E /* SupportFiles */,
+				6BF2BDE620AA0F450003F20C /* RepoResponse.swift */,
+				6BF2BDE820AA0F6C0003F20C /* Repo.swift */,
 			);
 			path = "iOS-Project-MVC";
 			sourceTree = "<group>";
@@ -253,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF2BDE920AA0F6C0003F20C /* Repo.swift in Sources */,
+				6B8AB81A20AA0D6000FC6F3E /* ReposManager.swift in Sources */,
 				EB955BEE1FD1CCCE009B4CCD /* NetworkRequest.swift in Sources */,
 				EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */,
 				EB9B611C1FD1CFEF0093BAA6 /* ReposViewController.swift in Sources */,
@@ -260,6 +279,7 @@
 				EB9B61201FD1D4EA0093BAA6 /* TableViewExtensions.swift in Sources */,
 				EB9B61191FD1CD7D0093BAA6 /* GithubRequest.swift in Sources */,
 				EB9B611E1FD1D0480093BAA6 /* ViewCode.swift in Sources */,
+				6BF2BDE720AA0F450003F20C /* RepoResponse.swift in Sources */,
 				EB9B61221FD1D5C70093BAA6 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

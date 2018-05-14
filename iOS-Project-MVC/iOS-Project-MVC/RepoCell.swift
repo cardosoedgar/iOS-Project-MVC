@@ -23,7 +23,7 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
         return label
     }()
 
-    let userRealName: UILabel = {
+    let userType: UILabel = {
         let label = UILabel()
         label.textColor = .gray
         label.textAlignment = .center
@@ -76,10 +76,21 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
         setup()
     }
     
+    func setup(with repo: Repo) {
+        let imageUrl = URL(string: repo.image)
+        userImage.kf.setImage(with: imageUrl)
+        userName.text = repo.owner
+        userType.text = repo.type
+        repoDescription.text = repo.description
+        repoName.text = repo.name
+        forksNumber.text = "\(repo.forks)"
+        starsNumber.text = "\(repo.stars)"
+    }
+    
     func buildViewHierarchy() {
         userView.addSubview(userImage)
         userView.addSubview(userName)
-        userView.addSubview(userRealName)
+        userView.addSubview(userType)
         addSubview(userView)
         addSubview(repoName)
         addSubview(repoDescription)
@@ -90,13 +101,6 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
     }
     
     func configureViews() {
-        repoName.text = "Nome Repo"
-        repoDescription.text = "Este repo é um repo feito por faeoifhaoiefha e foeahfeofhoaih"
-        forksNumber.text = "430"
-        starsNumber.text = "34"
-        userName.text = "username"
-        userRealName.text = "user real name"
-        userImage.image = UIImage(named: "githubicon")
         repoName.setContentHuggingPriority(.required, for: .vertical)
         userName.setContentHuggingPriority(.required, for: .vertical)
         forksNumber.setContentHuggingPriority(.required, for: .horizontal)
@@ -104,7 +108,7 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
     }
     
     func setupConstraints() {
-        constrain(userView, userImage, userName, userRealName) { userView, userImage, userName, userRealName in
+        constrain(userView, userImage, userName, userType) { userView, userImage, userName, userType in
             userImage.centerX == userView.centerX
             userImage.top == userView.top + 10
             userImage.width == 40
@@ -114,10 +118,10 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
             userName.leading == userView.leading
             userName.top == userImage.bottom + 2
 
-            userRealName.trailing == userView.trailing
-            userRealName.leading == userView.leading
-            userRealName.top == userName.bottom + 2
-            userRealName.bottom == userView.bottom - 10
+            userType.trailing == userView.trailing
+            userType.leading == userView.leading
+            userType.top == userName.bottom + 2
+            userType.bottom == userView.bottom - 10
         }
 
         constrain(self, userView, repoName, repoDescription, forkImage, forksNumber, starImage, starsNumber) {

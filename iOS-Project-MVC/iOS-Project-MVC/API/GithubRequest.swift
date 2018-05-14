@@ -11,12 +11,12 @@ import Foundation
 class GithubRequest {
     var networkRequest: NetworkRequestProtocol = NetworkRequest()
     
-    func getRepos(page: Int, completion: @escaping ([JsonObject]?) -> Void) {
+    func getRepos(page: Int, completion: @escaping (JsonObject?) -> Void) {
         let url = URL(string: "https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=\(page)")!
         
         networkRequest.request(url, method: .get, parameters: nil, headers: nil) { result in
             switch result {
-            case .success(.array (let response)):
+            case .success(.object (let response)):
                 completion(response)
             default:
                 completion(nil)

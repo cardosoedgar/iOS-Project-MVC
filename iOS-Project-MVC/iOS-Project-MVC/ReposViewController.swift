@@ -10,24 +10,32 @@ import UIKit
 import Cartography
 
 class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITableViewDataSource {
-    
     let tableView = UITableView()
+    let manager = ReposManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        loadRepos()
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    func loadRepos() {
+        manager.getRepos(page: 0) { success in
+            if success {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return manager.getRepoCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: RepoCell.self) as RepoCell
+        if let repo = manager.getRepo(at: indexPath.row) {
+            cell.setup(with: repo)
+        }
         return cell
     }
     
@@ -40,6 +48,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     }
     
     func configureViews() {
+        title = "Swift Repos"
         view.backgroundColor = .white
         tableView.delegate = self
         tableView.dataSource = self
