@@ -40,7 +40,8 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let prController = PullRequestViewController()
+        navigationController?.pushViewController(prController, animated: true)
     }
 
     func buildViewHierarchy() {

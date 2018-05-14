@@ -16,6 +16,7 @@
 		6B8AB81A20AA0D6000FC6F3E /* ReposManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */; };
 		6BF2BDE720AA0F450003F20C /* RepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE620AA0F450003F20C /* RepoResponse.swift */; };
 		6BF2BDE920AA0F6C0003F20C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE820AA0F6C0003F20C /* Repo.swift */; };
+		6BF2BDEC20AA41460003F20C /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */; };
 		EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */; };
 		EB955BD31FD1C4A4009B4CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */; };
 		EB955BD61FD1C4A4009B4CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 		6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposManager.swift; sourceTree = "<group>"; };
 		6BF2BDE620AA0F450003F20C /* RepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
 		6BF2BDE820AA0F6C0003F20C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
 		EB955BC81FD1C4A4009B4CCD /* iOS-Project-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,9 +143,10 @@
 				EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */,
 				EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */,
 				6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */,
-				6B8AB80C20AA0A1600FC6F3E /* SupportFiles */,
 				6BF2BDE620AA0F450003F20C /* RepoResponse.swift */,
 				6BF2BDE820AA0F6C0003F20C /* Repo.swift */,
+				6B8AB80C20AA0A1600FC6F3E /* SupportFiles */,
+				6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */,
 			);
 			path = "iOS-Project-MVC";
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				EB9B611C1FD1CFEF0093BAA6 /* ReposViewController.swift in Sources */,
 				EB9B61171FD1CD620093BAA6 /* Json.swift in Sources */,
 				EB9B61201FD1D4EA0093BAA6 /* TableViewExtensions.swift in Sources */,
+				6BF2BDEC20AA41460003F20C /* PullRequestViewController.swift in Sources */,
 				EB9B61191FD1CD7D0093BAA6 /* GithubRequest.swift in Sources */,
 				EB9B611E1FD1D0480093BAA6 /* ViewCode.swift in Sources */,
 				6BF2BDE720AA0F450003F20C /* RepoResponse.swift in Sources */,
