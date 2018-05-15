@@ -40,6 +40,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if let repository = manager.getRepo(at: indexPath.row) {
             let prManager = PullRequestsManager(repo: repository)
             let prController = PullRequestViewController(manager: prManager)
@@ -53,6 +54,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
 
     func configureViews() {
         title = "Swift Repos"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         view.backgroundColor = .white
         tableView.delegate = self
         tableView.dataSource = self

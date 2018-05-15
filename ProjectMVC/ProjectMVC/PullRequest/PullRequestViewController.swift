@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import SafariServices
 
 class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate, UITableViewDataSource {
     let manager: PullRequestsManager
@@ -43,12 +44,21 @@ class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let pr = manager.getPullRequest(at: indexPath.row), let url = URL(string: pr.url) {
+            let webController = SFSafariViewController(url: url)
+            self.present(webController, animated: true, completion: nil)
+        }
+    }
 
     func buildViewHierarchy() {
         view.addSubview(tableView)
     }
 
     func configureViews() {
+        title = manager.getRepoName()
         view.backgroundColor = .white
         tableView.delegate = self
         tableView.dataSource = self

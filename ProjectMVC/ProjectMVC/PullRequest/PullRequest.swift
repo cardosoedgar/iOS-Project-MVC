@@ -16,7 +16,7 @@ class PullRequest {
     let description: String
 
     init?(jsonObject: JsonObject) {
-        guard let url = jsonObject["url"] as? String,
+        guard let url = jsonObject["html_url"] as? String,
             let title = jsonObject["title"] as? String,
             let description = jsonObject["body"] as? String,
             let user = jsonObject["user"] as? JsonObject,
