@@ -20,7 +20,6 @@
 		EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */; };
 		EB955BD31FD1C4A4009B4CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */; };
 		EB955BD61FD1C4A4009B4CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955BD41FD1C4A4009B4CCD /* LaunchScreen.storyboard */; };
-		EB955BE11FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BE01FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift */; };
 		EB955BEE1FD1CCCE009B4CCD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955BED1FD1CCCE009B4CCD /* NetworkRequest.swift */; };
 		EB9B61171FD1CD620093BAA6 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B61161FD1CD620093BAA6 /* Json.swift */; };
 		EB9B61191FD1CD7D0093BAA6 /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B61181FD1CD7D0093BAA6 /* GithubRequest.swift */; };
@@ -64,13 +63,12 @@
 		6BF2BDE620AA0F450003F20C /* RepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
 		6BF2BDE820AA0F6C0003F20C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
-		EB955BC81FD1C4A4009B4CCD /* iOS-Project-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB955BC81FD1C4A4009B4CCD /* ProjectMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BCB1FD1C4A4009B4CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB955BD21FD1C4A4009B4CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB955BD51FD1C4A4009B4CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB955BD71FD1C4A4009B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB955BDC1FD1C4A5009B4CCD /* iOS-Project-MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Project-MVCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB955BE01FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteConcrete_MVCTests.swift; sourceTree = "<group>"; };
+		EB955BDC1FD1C4A5009B4CCD /* ProjectMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955BE21FD1C4A5009B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB955BED1FD1CCCE009B4CCD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		EB9B61161FD1CD620093BAA6 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
@@ -121,8 +119,8 @@
 		EB955BBF1FD1C4A4009B4CCD = {
 			isa = PBXGroup;
 			children = (
-				EB955BCA1FD1C4A4009B4CCD /* iOS-Project-MVC */,
-				EB955BDF1FD1C4A5009B4CCD /* iOS-Project-MVCTests */,
+				EB955BCA1FD1C4A4009B4CCD /* ProjectMVC */,
+				EB955BDF1FD1C4A5009B4CCD /* ProjectMVCTests */,
 				EB955BC91FD1C4A4009B4CCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,13 +128,13 @@
 		EB955BC91FD1C4A4009B4CCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB955BC81FD1C4A4009B4CCD /* iOS-Project-MVC.app */,
-				EB955BDC1FD1C4A5009B4CCD /* iOS-Project-MVCTests.xctest */,
+				EB955BC81FD1C4A4009B4CCD /* ProjectMVC.app */,
+				EB955BDC1FD1C4A5009B4CCD /* ProjectMVCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB955BCA1FD1C4A4009B4CCD /* iOS-Project-MVC */ = {
+		EB955BCA1FD1C4A4009B4CCD /* ProjectMVC */ = {
 			isa = PBXGroup;
 			children = (
 				EB9B611A1FD1CF0E0093BAA6 /* API */,
@@ -148,16 +146,15 @@
 				6B8AB80C20AA0A1600FC6F3E /* SupportFiles */,
 				6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */,
 			);
-			path = "iOS-Project-MVC";
+			path = ProjectMVC;
 			sourceTree = "<group>";
 		};
-		EB955BDF1FD1C4A5009B4CCD /* iOS-Project-MVCTests */ = {
+		EB955BDF1FD1C4A5009B4CCD /* ProjectMVCTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB955BE01FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift */,
 				EB955BE21FD1C4A5009B4CCD /* Info.plist */,
 			);
-			path = "iOS-Project-MVCTests";
+			path = ProjectMVCTests;
 			sourceTree = "<group>";
 		};
 		EB9B611A1FD1CF0E0093BAA6 /* API */ = {
@@ -173,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB955BC71FD1C4A4009B4CCD /* iOS-Project-MVC */ = {
+		EB955BC71FD1C4A4009B4CCD /* ProjectMVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB955BE51FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "iOS-Project-MVC" */;
+			buildConfigurationList = EB955BE51FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "ProjectMVC" */;
 			buildPhases = (
 				EB955BC41FD1C4A4009B4CCD /* Sources */,
 				EB955BC51FD1C4A4009B4CCD /* Frameworks */,
@@ -187,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-Project-MVC";
+			name = ProjectMVC;
 			productName = "TesteConcrete-MVC";
-			productReference = EB955BC81FD1C4A4009B4CCD /* iOS-Project-MVC.app */;
+			productReference = EB955BC81FD1C4A4009B4CCD /* ProjectMVC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB955BDB1FD1C4A5009B4CCD /* iOS-Project-MVCTests */ = {
+		EB955BDB1FD1C4A5009B4CCD /* ProjectMVCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB955BE81FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "iOS-Project-MVCTests" */;
+			buildConfigurationList = EB955BE81FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "ProjectMVCTests" */;
 			buildPhases = (
 				EB955BD81FD1C4A5009B4CCD /* Sources */,
 				EB955BD91FD1C4A5009B4CCD /* Frameworks */,
@@ -205,9 +202,9 @@
 			dependencies = (
 				EB955BDE1FD1C4A5009B4CCD /* PBXTargetDependency */,
 			);
-			name = "iOS-Project-MVCTests";
+			name = ProjectMVCTests;
 			productName = "TesteConcrete-MVCTests";
-			productReference = EB955BDC1FD1C4A5009B4CCD /* iOS-Project-MVCTests.xctest */;
+			productReference = EB955BDC1FD1C4A5009B4CCD /* ProjectMVCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB955BC31FD1C4A4009B4CCD /* Build configuration list for PBXProject "iOS-Project-MVC" */;
+			buildConfigurationList = EB955BC31FD1C4A4009B4CCD /* Build configuration list for PBXProject "ProjectMVC" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB955BC71FD1C4A4009B4CCD /* iOS-Project-MVC */,
-				EB955BDB1FD1C4A5009B4CCD /* iOS-Project-MVCTests */,
+				EB955BC71FD1C4A4009B4CCD /* ProjectMVC */,
+				EB955BDB1FD1C4A5009B4CCD /* ProjectMVCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB955BE11FD1C4A5009B4CCD /* TesteConcrete_MVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +314,7 @@
 /* Begin PBXTargetDependency section */
 		EB955BDE1FD1C4A5009B4CCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB955BC71FD1C4A4009B4CCD /* iOS-Project-MVC */;
+			target = EB955BC71FD1C4A4009B4CCD /* ProjectMVC */;
 			targetProxy = EB955BDD1FD1C4A5009B4CCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -456,10 +452,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "iOS-Project-MVC/Info.plist";
+				INFOPLIST_FILE = ProjectMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cardosoedgar.iOS-Project-MVC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardosoedgar.ProjectMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,10 +472,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "iOS-Project-MVC/Info.plist";
+				INFOPLIST_FILE = ProjectMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cardosoedgar.iOS-Project-MVC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardosoedgar.ProjectMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,13 +489,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
-				INFOPLIST_FILE = "TesteConcrete-MVCTests/Info.plist";
+				INFOPLIST_FILE = ProjectMVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concrete.TesteConcrete-MVCTests";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.ProjectMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Project-MVC.app/iOS-Project-MVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectMVC.app/ProjectMVC";
 			};
 			name = Debug;
 		};
@@ -510,20 +506,20 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
-				INFOPLIST_FILE = "TesteConcrete-MVCTests/Info.plist";
+				INFOPLIST_FILE = ProjectMVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concrete.TesteConcrete-MVCTests";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.ProjectMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Project-MVC.app/iOS-Project-MVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectMVC.app/ProjectMVC";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB955BC31FD1C4A4009B4CCD /* Build configuration list for PBXProject "iOS-Project-MVC" */ = {
+		EB955BC31FD1C4A4009B4CCD /* Build configuration list for PBXProject "ProjectMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB955BE31FD1C4A5009B4CCD /* Debug */,
@@ -532,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB955BE51FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "iOS-Project-MVC" */ = {
+		EB955BE51FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "ProjectMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB955BE61FD1C4A5009B4CCD /* Debug */,
@@ -541,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB955BE81FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "iOS-Project-MVCTests" */ = {
+		EB955BE81FD1C4A5009B4CCD /* Build configuration list for PBXNativeTarget "ProjectMVCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB955BE91FD1C4A5009B4CCD /* Debug */,

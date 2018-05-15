@@ -11,7 +11,7 @@ import Cartography
 
 class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()

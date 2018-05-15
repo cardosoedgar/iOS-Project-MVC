@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:../iOS-Project-MVC">
+      location = "self:/Users/edgarcostacardoso/ios/teste-mvc/iOS-Project-MVC/ProjectMVC.xcodeproj">
    </FileRef>
 </Workspace>

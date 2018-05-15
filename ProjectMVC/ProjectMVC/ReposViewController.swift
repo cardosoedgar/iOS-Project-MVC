@@ -54,7 +54,6 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
-
         tableView.register(cellType: RepoCell.self)
     }
 
