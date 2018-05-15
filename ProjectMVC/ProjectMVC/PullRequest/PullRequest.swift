@@ -31,4 +31,12 @@ class PullRequest {
         self.owner = owner
         self.image = image
     }
+
+    init() {
+        self.title = ""
+        self.url = ""
+        self.description = ""
+        self.owner = ""
+        self.image = ""
+    }
 }

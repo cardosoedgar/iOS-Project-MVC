@@ -40,7 +40,7 @@ class PullRequestsManager {
     func getPullRequestCount() -> Int {
         return pullRequests.count
     }
-    
+
     func getRepoName() -> String {
         return repo.name
     }

@@ -44,10 +44,10 @@ class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate
         }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let pr = manager.getPullRequest(at: indexPath.row), let url = URL(string: pr.url) {
+        if let pullRequest = manager.getPullRequest(at: indexPath.row), let url = URL(string: pullRequest.url) {
             let webController = SFSafariViewController(url: url)
             self.present(webController, animated: true, completion: nil)
         }
