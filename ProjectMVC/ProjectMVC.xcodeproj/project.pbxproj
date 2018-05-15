@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B309F4A20AB589800D90A8B /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B309F4920AB589800D90A8B /* PullRequest.swift */; };
+		6B309F4C20AB5D8D00D90A8B /* PullRequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B309F4B20AB5D8D00D90A8B /* PullRequestsManager.swift */; };
+		6B309F4E20AB64F500D90A8B /* PullRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B309F4D20AB64F500D90A8B /* PullRequestCell.swift */; };
 		6B8AB81320AA0A4D00FC6F3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */; };
 		6B8AB81420AA0A4D00FC6F3E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B8AB81520AA0A4D00FC6F3E /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */; };
@@ -63,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B309F4920AB589800D90A8B /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		6B309F4B20AB5D8D00D90A8B /* PullRequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsManager.swift; sourceTree = "<group>"; };
+		6B309F4D20AB64F500D90A8B /* PullRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCell.swift; sourceTree = "<group>"; };
 		6B8AB80D20AA0A4500FC6F3E /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = SOURCE_ROOT; };
 		6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
 		6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
@@ -118,6 +124,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B309F4F20AB651F00D90A8B /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */,
+				EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */,
+				6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */,
+				6BF2BDE620AA0F450003F20C /* RepoResponse.swift */,
+				6BF2BDE820AA0F6C0003F20C /* Repo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		6B309F5020AB652600D90A8B /* PullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				6B309F4D20AB64F500D90A8B /* PullRequestCell.swift */,
+				6B309F4920AB589800D90A8B /* PullRequest.swift */,
+				6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */,
+				6B309F4B20AB5D8D00D90A8B /* PullRequestsManager.swift */,
+			);
+			path = PullRequest;
+			sourceTree = "<group>";
+		};
 		6B8AB80C20AA0A1600FC6F3E /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,13 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				EB9B611A1FD1CF0E0093BAA6 /* API */,
-				EB9B611B1FD1CFEF0093BAA6 /* ReposViewController.swift */,
-				EB9B61211FD1D5C70093BAA6 /* RepoCell.swift */,
-				6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */,
-				6BF2BDE620AA0F450003F20C /* RepoResponse.swift */,
-				6BF2BDE820AA0F6C0003F20C /* Repo.swift */,
+				6B309F4F20AB651F00D90A8B /* Repo */,
+				6B309F5020AB652600D90A8B /* PullRequest */,
 				6B8AB80C20AA0A1600FC6F3E /* SupportFiles */,
-				6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */,
 			);
 			path = ProjectMVC;
 			sourceTree = "<group>";
@@ -333,7 +358,10 @@
 			files = (
 				6BF2BDE920AA0F6C0003F20C /* Repo.swift in Sources */,
 				6B8AB81A20AA0D6000FC6F3E /* ReposManager.swift in Sources */,
+				6B309F4E20AB64F500D90A8B /* PullRequestCell.swift in Sources */,
+				6B309F4C20AB5D8D00D90A8B /* PullRequestsManager.swift in Sources */,
 				EB955BEE1FD1CCCE009B4CCD /* NetworkRequest.swift in Sources */,
+				6B309F4A20AB589800D90A8B /* PullRequest.swift in Sources */,
 				EB955BCC1FD1C4A4009B4CCD /* AppDelegate.swift in Sources */,
 				EB9B611C1FD1CFEF0093BAA6 /* ReposViewController.swift in Sources */,
 				EB9B61171FD1CD620093BAA6 /* Json.swift in Sources */,

@@ -128,9 +128,9 @@ class RepoCell: UITableViewCell, ViewCode, ReusableCell {
 
             userView.top >= containerView.top
             userView.bottom >= containerView.bottom
-            userView.trailing == containerView.trailing + 8
+            userView.trailing == containerView.trailing - 8
             userView.centerY == containerView.centerY
-            userView.width == 130
+            userView.width == 100
 
             repoName.top == containerView.top + 8
             repoName.leading == containerView.leading + 8

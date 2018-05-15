@@ -10,19 +10,38 @@ import UIKit
 import Cartography
 
 class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate, UITableViewDataSource {
+    let manager: PullRequestsManager
     let tableView = UITableView()
+
+    init(manager: PullRequestsManager) {
+        self.manager = manager
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        loadPullRequests()
+    }
+
+    func loadPullRequests() {
+        manager.getPullRequests { success in
+            if success {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return manager.getPullRequestCount()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: PullRequestCell.self)
+        if let pullRequest = manager.getPullRequest(at: indexPath.row) {
+            cell.setup(with: pullRequest)
+        }
+        return cell
     }
 
     func buildViewHierarchy() {
@@ -34,11 +53,16 @@ class PullRequestViewController: UIViewController, ViewCode, UITableViewDelegate
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
+        tableView.register(cellType: PullRequestCell.self)
     }
 
     func setupConstraints() {
         constrain(view, tableView) { containerView, tableView in
             tableView.edges == containerView.edges
         }
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

@@ -16,7 +16,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        loadRepos()
+        loadRepos()
     }
 
     func loadRepos() {
@@ -32,7 +32,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: RepoCell.self) as RepoCell
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: RepoCell.self)
         if let repo = manager.getRepo(at: indexPath.row) {
             cell.setup(with: repo)
         }
@@ -40,8 +40,11 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let prController = PullRequestViewController()
-        navigationController?.pushViewController(prController, animated: true)
+        if let repository = manager.getRepo(at: indexPath.row) {
+            let prManager = PullRequestsManager(repo: repository)
+            let prController = PullRequestViewController(manager: prManager)
+            navigationController?.pushViewController(prController, animated: true)
+        }
     }
 
     func buildViewHierarchy() {
