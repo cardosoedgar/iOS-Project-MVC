@@ -16,7 +16,7 @@ class ReposViewController: UIViewController, ViewCode, UITableViewDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        loadRepos()
+//        loadRepos()
     }
 
     func loadRepos() {

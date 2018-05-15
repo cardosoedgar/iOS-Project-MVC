@@ -37,4 +37,15 @@ class Repo {
         self.forks = forks
         self.stars = stars
     }
+
+    init(name: String = "", owner: String = "", image: String = "", type: String = "",
+         description: String = "", forks: Int = 0, stars: Int = 0) {
+        self.name = name
+        self.owner = owner
+        self.image = image
+        self.type = type
+        self.description = description
+        self.forks = forks
+        self.stars = stars
+    }
 }

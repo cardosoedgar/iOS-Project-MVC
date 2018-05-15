@@ -14,6 +14,13 @@
 		6B8AB81720AA0A4D00FC6F3E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */; };
 		6B8AB81820AA0A4D00FC6F3E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B8AB81A20AA0D6000FC6F3E /* ReposManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */; };
+		6B98076020AB4452001548A3 /* ReposManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D9A5D20AB1CC4000719AD /* ReposManagerSpec.swift */; };
+		6B9D9A5920AB1CAE000719AD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D9A5620AB1CAE000719AD /* Quick.framework */; };
+		6B9D9A5A20AB1CAE000719AD /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D9A5720AB1CAE000719AD /* KIF.framework */; };
+		6B9D9A5B20AB1CAE000719AD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D9A5820AB1CAE000719AD /* Nimble.framework */; };
+		6B9D9A6120AB2263000719AD /* NetworkRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D9A6020AB2263000719AD /* NetworkRequestMock.swift */; };
+		6B9D9A6320AB22D0000719AD /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D9A6220AB22D0000719AD /* JsonHelper.swift */; };
+		6B9D9A6520AB24B2000719AD /* Repos.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B9D9A6420AB24B2000719AD /* Repos.json */; };
 		6BF2BDE720AA0F450003F20C /* RepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE620AA0F450003F20C /* RepoResponse.swift */; };
 		6BF2BDE920AA0F6C0003F20C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDE820AA0F6C0003F20C /* Repo.swift */; };
 		6BF2BDEC20AA41460003F20C /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */; };
@@ -60,6 +67,14 @@
 		6B8AB80E20AA0A4500FC6F3E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
 		6B8AB80F20AA0A4500FC6F3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		6B8AB81920AA0D6000FC6F3E /* ReposManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposManager.swift; sourceTree = "<group>"; };
+		6B9D9A5620AB1CAE000719AD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		6B9D9A5720AB1CAE000719AD /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
+		6B9D9A5820AB1CAE000719AD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		6B9D9A5C20AB1CC4000719AD /* ProjectMVCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectMVCTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B9D9A5D20AB1CC4000719AD /* ReposManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposManagerSpec.swift; sourceTree = "<group>"; };
+		6B9D9A6020AB2263000719AD /* NetworkRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMock.swift; sourceTree = "<group>"; };
+		6B9D9A6220AB22D0000719AD /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		6B9D9A6420AB24B2000719AD /* Repos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Repos.json; sourceTree = "<group>"; };
 		6BF2BDE620AA0F450003F20C /* RepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
 		6BF2BDE820AA0F6C0003F20C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		6BF2BDEB20AA41460003F20C /* PullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9D9A5920AB1CAE000719AD /* Quick.framework in Frameworks */,
+				6B9D9A5A20AB1CAE000719AD /* KIF.framework in Frameworks */,
+				6B9D9A5B20AB1CAE000719AD /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +134,34 @@
 			name = SupportFiles;
 			sourceTree = "<group>";
 		};
+		6B9D9A5520AB1CAE000719AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D9A5720AB1CAE000719AD /* KIF.framework */,
+				6B9D9A5820AB1CAE000719AD /* Nimble.framework */,
+				6B9D9A5620AB1CAE000719AD /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9D9A5F20AB1CCC000719AD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D9A5C20AB1CC4000719AD /* ProjectMVCTests-Bridging-Header.h */,
+				EB955BE21FD1C4A5009B4CCD /* Info.plist */,
+				6B9D9A6220AB22D0000719AD /* JsonHelper.swift */,
+				6B9D9A6420AB24B2000719AD /* Repos.json */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
 		EB955BBF1FD1C4A4009B4CCD = {
 			isa = PBXGroup;
 			children = (
 				EB955BCA1FD1C4A4009B4CCD /* ProjectMVC */,
 				EB955BDF1FD1C4A5009B4CCD /* ProjectMVCTests */,
 				EB955BC91FD1C4A4009B4CCD /* Products */,
+				6B9D9A5520AB1CAE000719AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,7 +192,9 @@
 		EB955BDF1FD1C4A5009B4CCD /* ProjectMVCTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB955BE21FD1C4A5009B4CCD /* Info.plist */,
+				6B9D9A5F20AB1CCC000719AD /* SupportFiles */,
+				6B9D9A5D20AB1CC4000719AD /* ReposManagerSpec.swift */,
+				6B9D9A6020AB2263000719AD /* NetworkRequestMock.swift */,
 			);
 			path = ProjectMVCTests;
 			sourceTree = "<group>";
@@ -223,6 +265,7 @@
 					};
 					EB955BDB1FD1C4A5009B4CCD = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EB955BC71FD1C4A4009B4CCD;
 					};
@@ -261,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9D9A6520AB24B2000719AD /* Repos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B98076020AB4452001548A3 /* ReposManagerSpec.swift in Sources */,
+				6B9D9A6320AB22D0000719AD /* JsonHelper.swift in Sources */,
+				6B9D9A6120AB2263000719AD /* NetworkRequestMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK87ZWXZ25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -467,7 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK87ZWXZ25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -487,12 +534,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				DEVELOPMENT_TEAM = XK87ZWXZ25;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProjectMVCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.ProjectMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectMVCTests/ProjectMVCTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectMVC.app/ProjectMVC";
@@ -504,12 +558,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				DEVELOPMENT_TEAM = XK87ZWXZ25;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProjectMVCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.ProjectMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectMVCTests/ProjectMVCTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectMVC.app/ProjectMVC";

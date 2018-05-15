@@ -9,7 +9,11 @@
 import Foundation
 
 class GithubRequest {
-    var networkRequest: NetworkRequestProtocol = NetworkRequest()
+    let networkRequest: NetworkRequestProtocol
+
+    init(networkRequest: NetworkRequestProtocol = NetworkRequest()) {
+        self.networkRequest = networkRequest
+    }
 
     func getRepos(page: Int, completion: @escaping (JsonObject?) -> Void) {
         let url = URL(string: "https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=\(page)")!

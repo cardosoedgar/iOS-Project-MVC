@@ -9,16 +9,20 @@
 import Foundation
 
 class ReposManager {
-    private let request = GithubRequest()
+    private let requestManager: GithubRequest
     private var repos = [Repo]()
 
+    init(requestManager: GithubRequest = GithubRequest()) {
+        self.requestManager = requestManager
+    }
+
     func getRepos(page: Int, completion: @escaping (Bool) -> Void) {
-        request.getRepos(page: page) { result in
+        requestManager.getRepos(page: page) { result in
             if let result = result {
                 let response = RepoResponse(jsonObject: result)
                 if let repos = response?.items {
                     self.repos = repos
-                    completion(true)
+                    return completion(true)
                 }
             }
 

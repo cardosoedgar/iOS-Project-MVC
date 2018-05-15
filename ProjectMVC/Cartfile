@@ -1,3 +1,6 @@
 github "Alamofire/Alamofire"
 github "robb/Cartography"
 github "onevcat/Kingfisher"
+github "Quick/Quick"
+github "Quick/Nimble"
+github "kif-framework/KIF"
