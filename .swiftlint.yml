@@ -3,4 +3,3 @@ disabled_rules:
   - redundant_void_return
 excluded:
   - Carthage
-  - iOS-Project-MVCTests
