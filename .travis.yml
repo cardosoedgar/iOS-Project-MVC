@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode9.3.1
+osx_image: xcode9.3
 
 cache:
   directories:
@@ -19,4 +19,4 @@ script:
   - xcodebuild clean build -sdk iphonesimulator -project ProjectMVC.xcodeproj -scheme ProjectMVC CODE_SIGNING_REQUIRED=NO
 
 after_success:
-  - slather
+  - slather coverage -c -s -t --ignore '../*' -b ${TRAVIS_BUILD_DIR}/myDerivedData --verbose
