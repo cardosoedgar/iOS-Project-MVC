@@ -2,6 +2,7 @@ language: swift
 osx_image: xcode9.3
 
 cache:
+  - bundler
   directories:
   - Carthage
 
@@ -16,7 +17,7 @@ before_script:
   - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
 
 script:
-  - xcodebuild clean build -sdk iphonesimulator -project ProjectMVC.xcodeproj -scheme ProjectMVC CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean build -sdk iphonesimulator -project ProjectMVC.xcodeproj -scheme ProjectMVC CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES
 
 after_success:
   - slather coverage -c -s -t --ignore '../*' -b ${TRAVIS_BUILD_DIR}/myDerivedData --verbose

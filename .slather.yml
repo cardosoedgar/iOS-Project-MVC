@@ -3,6 +3,7 @@
 coverage_service: coveralls
 xcodeproj: ProjectMVC.xcodeproj
 scheme: ProjectMVC
+binary_basename: ProjectMVC
 ignore:
   - Carthage/*
   - ProjectMVCTests/*
